@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/estilo/main.css">
+    <title>Desafio | 1</title>
+</head>
+
+<header>
+        <h1>Bem-vindo!</h1>
+        <nav>
+            <a href="/index.html">&blacktriangleleft; Voltar</a>
+        </nav>
+</header>
+<body id="page-desafio1">
+    <main>
+        <section>
+            <h1>Desafios - Iniciando Com Javascript</h1>
+            <p>Instruções</p>
+            <ul class="desafios-listados">
+                <li>Mostre um alerta com a mensagem "Boas vindas ao nosso site!".</li>
+                <li>Declare uma variável chamada nome e atribua a ela o valor "Lua".</li>
+                <li>Crie uma variável chamada idade e atribua a ela o valor 25.</li>
+                <li>Defina uma variável numeroDeVendas e atribua a ela o valor 50.</li>
+                <li>Defina uma variável saldoDisponivel e atribua a ela o valor 1000.</li>
+                <li>Exiba um alerta com o texto "Erro! Preencha todos os campos"</li>
+                <li>Declare uma variável chamada mensagemDeErro e atribua a ela o valor "Erro! Preencha todos os campos" Agora exiba um alerta com o valor da variável mensagemDeErro.</li>
+                <li>Para o próximo código, use um novo prompt para perguntar o nome do usuário e armazená-lo em uma variável, pode chamá-la de nome ou adicionar o que desejar.</li>
+                <li>Peça ao usuário para digitar sua idade usando um prompt e armazene-a na variável idade.</li>
+                <li>Agora, para validar a idade que capturamos no desafio 09, caso a idade seja maior ou igual que 18, exiba um alerta com a mensagem "Pode tirar a habilitação!".</li>
+            </ul>
+            <p>Desafios 1-6 <br>{
+                <code>
+                    <ul>
+                        <li>let nome = 'Lua';</li>
+                        <li>let idade = '25';</li>
+                        <li>let numeroDeVendas = 50;</li>
+                        <li>let saldoDisponivel = 1000;</li>
+                        <li>let mensagemDeErro = 'Erro! Preencha todos os campos!';</li>
+                        <li>this.alert('Boas-vindas ao nosso site!')</li>
+                        <li>this.alert('Erro! Preencha todos os campos!')</li>
+                        <li>this.alert(mensagemDeErro)</li>
+                    </ul>
+                </code>}<br>
+                Desafio 7-10 <br>{
+                    <ul>
+                        <code>
+                            <li>let mensagemDeErro = 'Erro! Preencha todos os campos!';</li>
+                            <li>this.alert(mensagemDeErro);</li>
+                            <li>let nome = this.prompt('Por favor digite seu nome:');</li>
+                            <li>let idade = this.prompt('Por favor digite a sua idade:');</li>
+                            <li>
+                            if (idade >= 18){
+                            this.alert('Pode tirar a habilitação de motorista.');}
+                            </li>
+                        </code>
+                    </ul>
+                }
+            </p>
+        </section>
+    </main>
+    <script src="/src/script/app.js"></script>
+</body>
+</html>

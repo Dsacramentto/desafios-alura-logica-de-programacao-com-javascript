@@ -1,0 +1,45 @@
+#home{
+  margin-bottom: 10px;
+}
+
+.cards-container{
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.header-desafios-card {
+border-radius:  10px 10px 0px 0px;
+background-color: rgb(255, 195, 85);
+text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.334);
+color: white;
+}
+
+.desafios-card {
+  padding: 0;
+  max-width: 350px;
+  background-color: rgba(15, 1, 37, 0.884);
+  color: white;
+}
+
+.desafios-card h3{
+  padding: 10px;
+}
+
+.desafios-card ul{
+  line-height: 1.3;
+  padding: 10px 15px;
+}
+
+.desafios-card ul li{
+  margin-bottom: 10px;
+}
+
+#lista-de-desafios {
+  gap: 0;
+  flex-direction: column;
+  list-style: "-";
+}
+
+

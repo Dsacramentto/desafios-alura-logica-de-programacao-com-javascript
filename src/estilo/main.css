@@ -1,3 +1,6 @@
+@import url(/src/estilo/home.css);
+
+
 * {
   padding: 0;
   margin: 0;
@@ -37,10 +40,14 @@ nav a:hover {
 
 section {
   border-radius: 15px;
-  padding: 15px;
+  padding: 30px;
   background-color: rgb(241, 241, 241);
   margin-bottom: 10px;
   line-height: 1.8;
+}
+
+section a{
+  text-decoration: none;
 }
 
 section h1,
@@ -79,54 +86,6 @@ footer{
   text-align: center;
 }
 
-#home{
-  margin-bottom: 10px;
-}
-
-
-.cards-container{
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-
-.header-desafios-card {
-border-radius:  10px 10px 0px 0px;
-background-color: rgb(255, 195, 85);
-color: white;
-}
-
-.desafios-card {
-  padding: 0;
-  max-width: 350px;
-  background-color: rgba(15, 1, 37, 0.884);
-  color: white;
-}
-
-.desafios-card h3{
-  padding: 10px;
-}
-
-.desafios-card ul{
-  line-height: 1.3;
-  padding: 10px 15px;
-}
-
-.desafios-card ul li{
-  margin-bottom: 10px;
-}
-
-#lista-de-desafios {
-  gap: 0;
-  flex-direction: column;
-  list-style: "-";
-}
-
-.mostrar-mais {
-  display: none;
-}
-
 .btn-default {
   display: flex;
   align-self: center;
@@ -136,4 +95,18 @@ color: white;
   border: none;
   font-size: 1em;
   background-color: rgb(251, 253, 188);
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.btn-default:hover{
+  background-color: rgb(211, 194, 157);
+}
+
+.desafios-listados{
+  padding: 20px;
+  line-height: 1;
+  gap: 0.8em;
+  flex-direction: column;
+  list-style: decimal;
 }
