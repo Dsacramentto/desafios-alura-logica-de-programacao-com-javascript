@@ -110,3 +110,7 @@ footer{
   flex-direction: column;
   list-style: decimal;
 }
+
+.big-code{
+  text-wrap: wrap;
+}

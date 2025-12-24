@@ -25,6 +25,46 @@
                 <li>Crie uma mensagem que informa o usuário sobre o saldo da conta, usando uma template string para incluir o valor do saldo</li>
                 <li>Peça ao usuário para inserir seu nome usando prompt. Em seguida, mostre um alerta de boas-vindas usando esse nome.</li>
             </ul>
+            <p>Desafios 1-5 <br>{
+                <code>
+                    <ul>
+                        <li class="big-code">
+                            <br>//Verificar Dia útil
+                            <br>let diaDaSemana = this.prompt('Qual dia da semana é hoje?');
+                            <br>if (diaDaSemana == 'Sábado' || diaDaSemana == 'Domingo'){
+                            <br>this.alert('Bom fim de semana!')
+                            }
+                            <br>else {
+                            <br>this.alert('Boa semana!')
+                            }
+                        </li>
+
+                        //Verificar número positivo ou negativo
+                        let numero = this.prompt('Digite um número:');
+                        if (numero > 0){
+                            this.alert('O número é positivo!');
+                        } else{
+                            this.alert('O número é negativo!');
+                        }
+
+                        //Sistema de pontuação
+                        let pontos = 0;
+                        if (pontos > 100){
+                            this.alert('Parabéns, você venceu o jogo!')
+                        } else{
+                            this.alert('Tente novamente para ganhar!')
+                        }
+
+                        //Saldo na conta
+                        let saldoDisponivel = 1000;
+                        this.alert(`O saldo disponível na conta é R$${saldoDisponivel}`)
+
+                        //Usuário
+                        let userName = this.prompt('Digite o seu nome');
+                        this.alert(`Seja bem-vindo, ${userName}!`)
+                    </ul>
+                </code>}
+            </p>
         </section>
     </main>
     <script src="/src/script/app.js"></script>
