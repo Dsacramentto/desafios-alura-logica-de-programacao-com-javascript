@@ -4,18 +4,22 @@
 }
 
 body {
-  padding: 30px;
   background-color: rgb(216, 216, 216);
   font-family: sans-serif;
 }
 
 body > header {
-  margin-bottom: 45px;
+  margin: 30px 30px 45px 30px;
   padding: 20px;
   border-radius: 15px;
   background-color: rgb(122, 122, 122);
   color: white;
+  position: sticky;
 }
+
+  main{
+    padding: 30px;
+  }
 
 nav {
   margin-top: 10px;
@@ -48,15 +52,6 @@ section p {
   margin-bottom: 10px;
 }
 
-.desafios-card {
-  max-width: 350px;
-  background-color: rgb(46, 46, 46);
-}
-
-.header-desafios-card {
-  border-bottom: 2px solid white;
-}
-
 ul {
   display: flex;
   gap: 30px;
@@ -64,7 +59,7 @@ ul {
 }
 
 ul a {
-  font-size: 1.1em;
+  font-size: 0.9em;
   text-decoration: none;
   color: black;
   transition: 0.2s ease-in;
@@ -75,6 +70,51 @@ ul a:hover {
   padding: 5px;
   border-radius: 7px;
   background-color: rgb(3, 0, 32);
+}
+
+footer{
+  padding: 4px;
+  background-color: rgb(10, 10, 10);
+  color: white;
+  text-align: center;
+}
+
+#home{
+  margin-bottom: 10px;
+}
+
+
+.cards-container{
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.header-desafios-card {
+border-radius:  10px 10px 0px 0px;
+background-color: rgb(255, 195, 85);
+color: white;
+}
+
+.desafios-card {
+  padding: 0;
+  max-width: 350px;
+  background-color: rgba(15, 1, 37, 0.884);
+  color: white;
+}
+
+.desafios-card h3{
+  padding: 10px;
+}
+
+.desafios-card ul{
+  line-height: 1.3;
+  padding: 10px 15px;
+}
+
+.desafios-card ul li{
+  margin-bottom: 10px;
 }
 
 #lista-de-desafios {
@@ -88,7 +128,12 @@ ul a:hover {
 }
 
 .btn-default {
-  max-width: 220px;
+  display: flex;
+  align-self: center;
+  margin: 20px auto;
+  padding: 2px 20px;
   border-radius: 5px;
-  font-size: 1.5em;
+  border: none;
+  font-size: 1em;
+  background-color: rgb(251, 253, 188);
 }
